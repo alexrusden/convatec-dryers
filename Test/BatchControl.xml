@@ -1,0 +1,23 @@
+<root>
+  <Options>
+    <Width>800</Width>
+    <Height>600</Height>
+    <SequencerOptions>
+      <ControlSystems>
+        <ControlSystem>
+          <Code>AdaptiveControl</Code>
+          <Settings>
+            <Setting>
+              <Name>Debug</Name>
+              <Value>0</Value>
+            </Setting>
+            <Setting>
+              <Name>IpAddress</Name>
+              <Value>192.168.0.10</Value>
+            </Setting>
+          </Settings>
+        </ControlSystem>
+      </ControlSystems>
+    </SequencerOptions>
+  </Options>
+</root>

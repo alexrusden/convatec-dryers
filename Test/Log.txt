@@ -1,0 +1,1436 @@
+02/18/2010 09:13:52 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.3603
+OSVersion: Microsoft Windows NT 6.0.6000.0
+MachineName: SHAUNSLAPTOP
+
+02/18/2010 09:14:02 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+02/18/2010 09:14:02 - Information - Mode Changed
+Machine: Local
+To Debug
+
+02/18/2010 09:17:02 - Information - Control System Shut Down
+Machine: Local
+
+02/18/2010 09:37:29 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.3603
+OSVersion: Microsoft Windows NT 6.0.6000.0
+MachineName: SHAUNSLAPTOP
+
+02/18/2010 09:37:32 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+02/18/2010 09:37:32 - Information - Mode Changed
+Machine: Local
+To Debug
+
+02/18/2010 09:38:19 - Information - Run
+Machine: Local
+
+02/18/2010 09:38:39 - Information - Control System Shut Down
+Machine: Local
+
+04/06/2010 14:59:13 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.3603
+OSVersion: Microsoft Windows NT 6.0.6000.0
+MachineName: SHAUNSLAPTOP
+
+04/06/2010 14:59:17 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+04/06/2010 14:59:17 - Information - Mode Changed
+Machine: Local
+To Debug
+
+04/06/2010 15:00:38 - Information - Batch Start User
+Machine: Local
+TheUser
+
+04/06/2010 15:00:39 - Information - Control System Program Start
+Machine: Local
+Job: CLE676788
+
+04/06/2010 15:00:39 - Information - User Name
+Machine: Local
+ADAM BRAGG
+
+04/06/2010 15:00:40 - Information - Run
+Machine: Local
+
+04/06/2010 15:00:44 - Information - Stop
+Machine: Local
+
+04/06/2010 15:00:44 - Information - Control System Program Stop
+Machine: Local
+Job: CLE676788
+
+04/06/2010 15:00:46 - Information - Control System Shut Down
+Machine: Local
+
+03/29/2012 13:06:15 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/29/2012 13:06:41 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/29/2012 13:06:41 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/29/2012 13:07:23 - Information - Control System Shut Down
+Machine: Local
+
+03/29/2012 13:59:21 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/29/2012 13:59:23 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/29/2012 13:59:23 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/29/2012 14:13:10 - Information - Control System Shut Down
+Machine: Local
+
+03/29/2012 14:13:13 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+03/29/2012 14:13:13 - Information - Shutdown
+
+03/29/2012 15:36:41 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/29/2012 15:36:43 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/29/2012 15:36:43 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/29/2012 15:40:01 - Information - Control System Shut Down
+Machine: Local
+
+03/29/2012 16:02:31 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/29/2012 16:02:34 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/29/2012 16:02:34 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/29/2012 16:14:17 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/29/2012 16:14:19 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/29/2012 16:14:19 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/29/2012 16:17:01 - Information - Control System Shut Down
+Machine: Local
+
+03/29/2012 16:31:34 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/29/2012 16:31:37 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/29/2012 16:31:37 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/29/2012 19:05:43 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:24:57 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:24:59 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:24:59 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/30/2012 06:27:22 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:27:37 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:27:50 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:27:59 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/30/2012 06:28:32 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:28:35 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:28:47 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/30/2012 06:29:34 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:29:37 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+03/30/2012 06:29:37 - Information - Shutdown
+
+03/30/2012 06:31:27 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:31:29 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:31:38 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:31:41 - Information - Shutdown
+
+03/30/2012 06:31:45 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:31:55 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:31:55 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/30/2012 06:32:38 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:32:42 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+03/30/2012 06:32:42 - Information - Shutdown
+
+03/30/2012 06:33:24 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:33:26 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:33:26 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/30/2012 06:34:57 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:35:00 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+03/30/2012 06:35:00 - Information - Shutdown
+
+03/30/2012 06:35:13 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4963
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+03/30/2012 06:35:15 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+03/30/2012 06:35:15 - Information - Mode Changed
+Machine: Local
+To Debug
+
+03/30/2012 06:35:47 - Information - Control System Shut Down
+Machine: Local
+
+03/30/2012 06:35:51 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+03/30/2012 06:35:51 - Information - Shutdown
+
+05/22/2012 09:52:13 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+05/22/2012 09:52:20 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+05/22/2012 09:52:20 - Information - Mode Changed
+Machine: Local
+To Debug
+
+05/22/2012 09:53:50 - Information - Control System Program Start
+Machine: Local
+Job:  
+
+05/22/2012 09:53:50 - Information - User Name
+Machine: Local
+
+05/22/2012 09:53:52 - Information - Run
+Machine: Local
+
+05/22/2012 09:56:41 - Information - Control System Shut Down
+Machine: Local
+
+05/22/2012 09:56:44 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 167
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+05/22/2012 09:56:44 - Information - Shutdown
+
+05/22/2012 10:03:23 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+05/22/2012 10:03:25 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+05/22/2012 10:03:25 - Information - Mode Changed
+Machine: Local
+To Debug
+
+05/22/2012 10:08:55 - Information - Control System Program Start
+Machine: Local
+Job:  @1
+
+05/22/2012 10:08:55 - Information - User Name
+Machine: Local
+
+05/22/2012 10:08:57 - Information - Run
+Machine: Local
+
+05/22/2012 10:09:51 - Information - Control System Shut Down
+Machine: Local
+
+05/22/2012 10:09:54 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 167
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+05/22/2012 10:09:54 - Information - Shutdown
+
+05/22/2012 10:14:24 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+05/22/2012 10:14:26 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+05/22/2012 10:14:26 - Information - Mode Changed
+Machine: Local
+To Debug
+
+05/22/2012 10:43:12 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+05/22/2012 10:43:14 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+05/22/2012 10:43:14 - Information - Mode Changed
+Machine: Local
+To Debug
+
+05/22/2012 10:46:56 - Information - Control System Program Start
+Machine: Local
+Job:  @2
+
+05/22/2012 10:46:56 - Information - User Name
+Machine: Local
+
+05/22/2012 10:46:58 - Information - Run
+Machine: Local
+
+05/22/2012 11:16:46 - Information - Control System Shut Down
+Machine: Local
+
+05/22/2012 11:16:50 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 167
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+05/22/2012 11:16:50 - Information - Shutdown
+
+05/23/2012 12:40:17 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+05/23/2012 12:40:20 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+05/23/2012 12:40:20 - Information - Mode Changed
+Machine: Local
+To Debug
+
+05/23/2012 12:40:23 - Information - Mode Changed
+Machine: Local
+To Override
+
+05/23/2012 12:40:27 - Information - Run
+Machine: Local
+
+05/23/2012 12:42:34 - Information - Control System Shut Down
+Machine: Local
+
+05/23/2012 12:42:37 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+05/23/2012 12:42:37 - Information - Shutdown
+
+06/07/2012 14:10:50 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/07/2012 14:10:53 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/07/2012 14:10:53 - Information - Mode Changed
+Machine: Local
+To Debug
+
+06/07/2012 14:10:58 - Information - Mode Changed
+Machine: Local
+To Run
+
+06/07/2012 14:11:12 - Information - Mode Changed
+Machine: Local
+To Debug
+
+06/07/2012 14:13:06 - Information - Control System Program Start
+Machine: Local
+Job:  @3
+
+06/07/2012 14:13:06 - Information - User Name
+Machine: Local
+
+06/07/2012 14:13:08 - Information - Run
+Machine: Local
+
+06/07/2012 14:15:14 - Information - Stop
+Machine: Local
+
+06/07/2012 14:15:14 - Information - Control System Program Stop
+Machine: Local
+Job:  @3
+
+06/07/2012 14:15:54 - Information - Control System Program Start
+Machine: Local
+Job:  @4
+
+06/07/2012 14:15:54 - Information - User Name
+Machine: Local
+
+06/07/2012 14:15:56 - Information - Run
+Machine: Local
+
+06/07/2012 14:17:13 - Information - Pause
+Machine: Local
+
+06/07/2012 14:17:13 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:14 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:14 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:14 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:14 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:14 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:14 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:15 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:15 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:15 - Information - Backward
+Machine: Local
+
+06/07/2012 14:17:16 - Information - Run
+Machine: Local
+
+06/07/2012 14:17:16 - Information - Run
+Machine: Local
+
+06/07/2012 14:17:16 - Information - Run
+Machine: Local
+
+06/07/2012 14:17:21 - Information - Stop
+Machine: Local
+
+06/07/2012 14:17:21 - Information - Control System Program Stop
+Machine: Local
+Job:  @4
+
+06/07/2012 14:23:23 - Information - Control System Program Start
+Machine: Local
+Job:  @5
+
+06/07/2012 14:23:23 - Information - User Name
+Machine: Local
+
+06/07/2012 14:23:25 - Information - Run
+Machine: Local
+
+06/07/2012 14:24:48 - Information - Stop
+Machine: Local
+
+06/07/2012 14:24:48 - Information - Control System Program Stop
+Machine: Local
+Job:  @5
+
+06/07/2012 14:25:00 - Information - Control System Program Start
+Machine: Local
+Job:  @6
+
+06/07/2012 14:25:00 - Information - User Name
+Machine: Local
+
+06/07/2012 14:25:02 - Information - Run
+Machine: Local
+
+06/07/2012 14:27:11 - Information - Run
+Machine: Local
+
+06/07/2012 14:31:45 - Information - Control System Shut Down
+Machine: Local
+
+06/07/2012 14:31:48 - Information - Shutdown
+
+06/07/2012 14:38:32 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/07/2012 14:38:35 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/07/2012 14:38:35 - Information - Mode Changed
+Machine: Local
+To Debug
+
+06/07/2012 14:38:36 - Information - Control System Shut Down
+Machine: Local
+
+06/07/2012 14:38:39 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/07/2012 14:38:39 - Information - Shutdown
+
+06/08/2012 08:27:43 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 08:27:45 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.0
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 08:27:45 - Information - Mode Changed
+Machine: Local
+To Debug
+
+06/08/2012 08:27:48 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 08:27:51 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 08:27:51 - Information - Shutdown
+
+06/08/2012 08:45:13 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 08:45:15 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 08:45:15 - Information - Mode Changed
+Machine: Local
+To Debug
+
+06/08/2012 08:45:27 - Information - Mode Changed
+Machine: Local
+To Run
+
+06/08/2012 08:45:31 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 08:45:34 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 08:45:35 - Information - Shutdown
+
+06/08/2012 08:47:22 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 08:47:25 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 08:47:25 - Information - Mode Changed
+Machine: Local
+To Debug
+
+06/08/2012 08:48:00 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 08:48:03 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 08:48:03 - Information - Shutdown
+
+06/08/2012 08:48:09 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 08:48:36 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 08:48:39 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 08:48:42 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 08:48:42 - Information - Shutdown
+
+06/08/2012 10:23:20 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 10:23:23 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 10:23:24 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 10:23:27 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 10:23:27 - Information - Shutdown
+
+06/08/2012 10:24:19 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 10:24:22 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 10:24:28 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 10:24:31 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 10:24:31 - Information - Shutdown
+
+06/08/2012 10:29:53 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 10:29:55 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 10:30:18 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 10:30:21 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 10:30:21 - Information - Shutdown
+
+06/08/2012 10:30:51 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 10:30:53 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 10:31:27 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 10:31:30 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 10:31:30 - Information - Shutdown
+
+06/08/2012 10:44:34 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 10:44:36 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 10:59:24 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 10:59:27 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 10:59:27 - Information - Shutdown
+
+06/08/2012 12:10:52 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 12:10:54 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 12:10:56 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 12:11:00 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 12:11:00 - Information - Shutdown
+
+06/08/2012 12:14:21 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 12:14:24 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 12:14:25 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 12:14:28 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 12:14:28 - Information - Shutdown
+
+06/08/2012 12:17:36 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 12:17:38 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 12:17:41 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 12:17:44 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 12:17:44 - Information - Shutdown
+
+06/08/2012 12:32:00 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 12:32:02 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 12:32:57 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 12:33:00 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 12:33:00 - Information - Shutdown
+
+06/08/2012 12:33:30 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+06/08/2012 12:33:37 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+06/08/2012 12:33:38 - Information - Control System Shut Down
+Machine: Local
+
+06/08/2012 12:33:41 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+06/08/2012 12:33:41 - Information - Shutdown
+
+07/06/2012 09:13:01 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+07/06/2012 09:13:05 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+07/06/2012 09:13:09 - Information - Mode Changed
+Machine: Local
+To Debug
+
+07/06/2012 09:28:58 - Information - Control System Shut Down
+Machine: Local
+
+07/06/2012 09:29:02 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+07/06/2012 09:29:02 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 604
+   at CommandSequencer.LocalSequencer.RunOnceCatchingExceptions() in C:\TextileDev\Sequencer\LocalSequencer.vb:line 457
+
+07/06/2012 09:29:02 - Information - Shutdown
+
+07/09/2012 06:41:35 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+07/09/2012 06:41:38 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+07/09/2012 06:41:42 - Information - Mode Changed
+Machine: Local
+To Debug
+
+07/09/2012 06:42:50 - Information - Run
+Machine: Local
+
+07/09/2012 06:44:30 - Information - Control System Program Start
+Machine: Local
+Job:  
+
+07/09/2012 06:44:30 - Information - User Name
+Machine: Local
+
+07/09/2012 06:44:33 - Information - Run
+Machine: Local
+
+07/09/2012 06:45:00 - Information - Stop
+Machine: Local
+
+07/09/2012 06:45:00 - Information - Control System Program Stop
+Machine: Local
+Job:  
+
+07/09/2012 06:45:21 - Information - Control System Shut Down
+Machine: Local
+
+07/09/2012 06:45:25 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+07/09/2012 06:45:25 - Information - Shutdown
+
+07/09/2012 06:45:27 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+07/09/2012 06:45:29 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+07/09/2012 06:45:33 - Information - Mode Changed
+Machine: Local
+To Debug
+
+07/09/2012 06:46:28 - Information - Run
+Machine: Local
+
+07/09/2012 06:46:48 - Information - Control System Program Start
+Machine: Local
+Job:  @1
+
+07/09/2012 06:46:48 - Information - User Name
+Machine: Local
+
+07/09/2012 06:46:51 - Information - Run
+Machine: Local
+
+07/09/2012 06:52:56 - Information - Pause
+Machine: Local
+
+07/09/2012 06:52:58 - Information - Backward
+Machine: Local
+
+07/09/2012 06:52:59 - Information - Backward
+Machine: Local
+
+07/09/2012 06:53:00 - Information - Run
+Machine: Local
+
+07/09/2012 06:53:01 - Information - Run
+Machine: Local
+
+07/09/2012 06:54:24 - Information - Control System Shut Down
+Machine: Local
+
+07/09/2012 06:54:27 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run()
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+07/09/2012 06:54:27 - Information - Shutdown
+
+07/09/2012 06:54:50 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+07/09/2012 06:54:52 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.1
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+07/09/2012 06:54:54 - Information - Control System Shut Down
+Machine: Local
+
+07/09/2012 06:54:57 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+07/09/2012 06:54:57 - Information - Shutdown
+
+07/09/2012 07:04:10 - Information - Startup
+ApplicationVersion: 3.2.55.0
+NetVersion: 2.0.50727.4971
+OSVersion: Microsoft Windows NT 6.1.7600.0
+MachineName: SHAUNMCT-LAPTOP
+
+07/09/2012 07:04:12 - Information - Control System Start Up
+Machine: Local
+ControlCode: Adaptive Control
+Version: 1.0.0.2
+Copyright: Portions Copyright 1998-2007 Adaptive Control.
+
+07/09/2012 07:04:14 - Information - Control System Shut Down
+Machine: Local
+
+07/09/2012 07:04:17 - Error - Control Exception
+Machine: Local
+Thread: Sequencers
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   at BatchControl.MainView.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\BatchControl\MainView.vb:line 580
+   at CommandSequencer.LocalSequencer.OnSetButtonVisible(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\LocalSequencer.vb:line 34
+   at CommandSequencer.DotNetSequencer.SetButtonVisible_(ButtonPosition position, Int32 index, Boolean visible) in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 1805
+   at Bridge.SetButtonVisible(ButtonPosition , Int32 , Boolean )
+   at ControlCode.Run() in C:\Adaptive\Working Software\Convatec\Standard\ControlCode.vb:line 165
+   at Bridge.Run()
+   at CommandSequencer.DotNetSequencer.RunOnce() in C:\TextileDev\Sequencer\DotNetSequencer.vb:line 603
+
+07/09/2012 07:04:17 - Information - Shutdown
+

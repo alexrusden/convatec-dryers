@@ -1,0 +1,697 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AdaptiveControl
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ToolImages">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:UnitAttribute">
+ <summary>Specifies units for displaying the item's value.</summary>
+</member>
+<member name="T:FormatAttribute">
+ <summary>Specifies a format for displaying the item's value.</summary>
+</member>
+<member name="T:TranslateAttribute">
+ <summary>Specifies a translation of the item's name into a particular language.</summary>
+</member>
+<member name="M:TranslateAttribute.#ctor(System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:TranslateAttribute"/> class with a language and a translation.</summary>
+ <param name="language">The language.</param>
+ <param name="translation">The translation.</param>
+</member>
+<member name="P:TranslateAttribute.Language">
+ <summary>Gets the language.</summary>
+ <returns>the language.</returns>
+</member>
+<member name="P:TranslateAttribute.Translation">
+ <summary>Gets the translation.</summary>
+ <returns>the translation.</returns>
+</member>
+<member name="T:TranslateDescriptionAttribute">
+ <summary>Specifies a translation of the item's description into a particular language.</summary>
+</member>
+<member name="M:TranslateDescriptionAttribute.#ctor(System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:TranslateDescriptionAttribute"/> class with a language and a description.</summary>
+ <param name="language">The language.</param>
+ <param name="description">The translation of the description.</param>
+</member>
+<member name="P:TranslateDescriptionAttribute.Language">
+ <summary>Gets the language.</summary>
+ <returns>the language.</returns>
+</member>
+<member name="P:TranslateDescriptionAttribute.Description">
+ <summary>Gets the translated description.</summary>
+ <returns>the translated description.</returns>
+</member>
+<member name="T:TranslateCategoryAttribute">
+ <summary>Specifies a translation of the item's category into a particular language.</summary>
+</member>
+<member name="M:TranslateCategoryAttribute.#ctor(System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:TranslateCategoryAttribute"/> class with a language and a category.</summary>
+ <param name="language">The language.</param>
+ <param name="category">The translation of the category.</param>
+</member>
+<member name="P:TranslateCategoryAttribute.Language">
+ <summary>Gets the language.</summary>
+ <returns>the language.</returns>
+</member>
+<member name="P:TranslateCategoryAttribute.Category">
+ <summary>Gets the translated category.</summary>
+ <returns>the translated category.</returns>
+</member>
+<member name="T:TranslateScreenButtonAttribute">
+ <summary>Specifies a translation of a screen button's text into a particular language.</summary>
+</member>
+<member name="M:TranslateScreenButtonAttribute.#ctor(System.Int32,System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:TranslateScreenButtonAttribute"/> class with a language and a category.</summary>
+ <param name="order">The order of the button.</param>
+ <param name="language">The language.</param>
+ <param name="text">The translation of the button text.</param>
+</member>
+<member name="P:TranslateScreenButtonAttribute.Order">
+ <summary>Gets the order.</summary>
+ <returns>The order.</returns>
+</member>
+<member name="P:TranslateScreenButtonAttribute.Language">
+ <summary>Gets the language.</summary>
+ <returns>The language.</returns>
+</member>
+<member name="P:TranslateScreenButtonAttribute.Text">
+ <summary>Gets the translated button text.</summary>
+ <returns>The translated button text.</returns>
+</member>
+<member name="T:TranslateCommandAttribute">
+ <summary>Specifies a translation of a command into a particular language.</summary>
+</member>
+<member name="M:TranslateCommandAttribute.#ctor(System.String,System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:TranslateCommandAttribute"/> class with a language, long name and parameters.</summary>
+ <param name="language">The language.</param>
+ <param name="longName">The translation of the long name.</param>
+ <param name="parameters">The translation of the parameters.</param>
+</member>
+<member name="P:TranslateCommandAttribute.Language">
+ <summary>Gets the language.</summary>
+ <returns>The language.</returns>
+</member>
+<member name="P:TranslateCommandAttribute.LongName">
+ <summary>Gets the translated long name.</summary>
+ <returns>The translated long name.</returns>
+</member>
+<member name="P:TranslateCommandAttribute.Parameters">
+ <summary>Gets the translated parameters.</summary>
+ <returns>the translated parameters.</returns>
+</member>
+<member name="T:PersistAttribute">
+ <summary>Specifies that the item's value should be persisted while the control system is not running.</summary>
+</member>
+<member name="T:ACCommand">
+ <summary>Defines methods that are used to run a command.</summary>
+</member>
+<member name="M:ACCommand.Start(System.Int32[])">
+ <summary>Called when a command is started.</summary>
+ <param name="param">The parameter values.</param>
+ <returns>True if the command should step on, False if not.</returns>
+</member>
+<member name="M:ACCommand.Run">
+ <summary>Called to run the command.  Called all the time, whether or not the command is active.</summary>
+ <returns>true if the command should step on, false if not.</returns>
+</member>
+<member name="M:ACCommand.Cancel">
+ <summary>Call to cancel the command, after which <see cref="P:ACCommand.IsOn"/> should return False.</summary>
+</member>
+<member name="P:ACCommand.IsOn">
+ <summary>Gets whether the command is currently active.</summary>
+ <returns>true if the command is active; otherwise, false.</returns>
+</member>
+<member name="T:ACControlCode">
+ <summary>Defines methods that are used to run the control code.</summary>
+</member>
+<member name="M:ACControlCode.StartUp">
+ <summary>Called just once when the control system starts up for the first time.</summary>
+ <remarks>This will be shortly after the instance ctor for the class has been called.  All other control systems will have been created at this time, for example.</remarks>
+</member>
+<member name="M:ACControlCode.ShutDown">
+ <summary>Called just once when the control system is being shut down.  At this time, there will be approximately 3 seconds remaining before <see cref="M:ACControlCode.ReadInputs(System.Boolean[],System.Int16[],System.Int16[])"/>, <see cref="M:ACControlCode.Run"/> and <see cref="M:ACControlCode.WriteOutputs(System.Boolean[],System.Int16[])"/> stop being called.</summary>
+</member>
+<member name="M:ACControlCode.ReadInputs(System.Boolean[],System.Int16[],System.Int16[])">
+ <summary>Called to read input values into the given arrays.</summary>
+ <param name="dinp">An array into which digital input values should be stored.</param>
+ <param name="aninp">An array into which analog input values should be stored.</param>
+ <param name="temp">An array into which temperature values should be stored.</param>
+ <returns>true if a cycle of I/O reads has completed without errors.</returns>
+</member>
+<member name="M:ACControlCode.Run">
+ <summary>Called all the time to run the control.</summary>
+</member>
+<member name="M:ACControlCode.WriteOutputs(System.Boolean[],System.Int16[])">
+ <summary>Called to write output values found in the given arrays.</summary>
+ <param name="dout">An array in which digital output values are found.</param>
+ <param name="anout">An array in which analog output values are found.</param>
+</member>
+<member name="M:ACControlCode.DrawScreen(System.Int32,System.String[])">
+ <summary>Called to get text information for display on a screen.</summary>
+ <param name="screen">The screen number.</param>
+ <param name="row">An array of 100 rows in which text can be stored. <paramref name="row"/>[0] is not used.</param>
+</member>
+<member name="M:ACControlCode.ProgramStart">
+ <summary>Called each time a job (program) starts.</summary>
+</member>
+<member name="M:ACControlCode.ProgramStop">
+ <summary>Called each time a job (program) stops.</summary>
+</member>
+<member name="T:IncludeIPAttribute">
+ <summary>Specifies that this assembly should allow IP functionality in its program editor.</summary>
+</member>
+<member name="T:CommandAttribute">
+ <summary>Specifies that this class is a command.</summary>
+</member>
+<member name="M:CommandAttribute.#ctor(System.String,System.String,System.String,System.String,System.String,CommandType)">
+ <summary>Initializes a new instance of the <see cref="T:CommandAttribute"/> class with a long name and other optional parameters.</summary>
+ <param name="longName">The long name.</param>
+ <param name="parameters">The parameters.</param>
+ <param name="gradient">The gradient.</param>
+ <param name="target">The target.</param>
+ <param name="minutes">The minutes.</param>
+ <param name="commandType">The command type.</param>
+</member>
+<member name="P:CommandAttribute.LongName">
+ <summary>Gets the long name.</summary>
+ <returns>the long name.</returns>
+</member>
+<member name="P:CommandAttribute.Parameters">
+ <summary>Gets the parameters.</summary>
+ <returns>the parameters.</returns>
+</member>
+<member name="P:CommandAttribute.Gradient">
+ <summary>Gets the gradient.</summary>
+ <returns>the gradient.</returns>
+</member>
+<member name="P:CommandAttribute.Target">
+ <summary>Gets the target.</summary>
+ <returns>the target.</returns>
+</member>
+<member name="P:CommandAttribute.Minutes">
+ <summary>Gets the minutes.</summary>
+ <returns>the minutes.</returns>
+</member>
+<member name="P:CommandAttribute.CommandType">
+ <summary>Gets the command type.</summary>
+ <returns>the command type.</returns>
+</member>
+<member name="T:GraphTraceAttribute">
+ <summary>Specifies how this item should be shown as a trace on a history graph.</summary>
+</member>
+<member name="M:GraphTraceAttribute.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:GraphTraceAttribute"/> class with minimum and maximum values, and other optional parameters.</summary>
+ <param name="minimumValue">The minimum value of the variable which will shown on the graph.  Any smaller value is not shown.</param>
+ <param name="maximumValue">The maximum value of the variable which will shown on the graph.  Any larger value is not shown.</param>
+ <param name="minimumY">The bottom Y position on the graph corresponding to the <paramref name="minimumValue"/>.  Use 0 for the bottom of the graph.</param>
+ <param name="maximumY">The top Y position on the graph corresponding to the <paramref name="maximumValue"/>.  Use 10000 for the top of the graph.</param>
+ <param name="colorName">The color to display this graph trace.  If not specified, then the colors Olive, Red, Magenta, Blue, Navy, Maroon, and Green are used in rotation.</param>
+ <param name="format">The format in which to display the value.</param>
+</member>
+<member name="P:GraphTraceAttribute.MinimumValue">
+ <summary>Gets the minimum value.</summary>
+ <returns>the minimum value.</returns>
+</member>
+<member name="P:GraphTraceAttribute.MaximumValue">
+ <summary>Gets the maximum value.</summary>
+ <returns>the maximum value.</returns>
+</member>
+<member name="P:GraphTraceAttribute.MinimumY">
+ <summary>Gets the minimum Y.</summary>
+ <returns>the command type.</returns>
+</member>
+<member name="P:GraphTraceAttribute.MaximumY">
+ <summary>Gets the maximum Y.</summary>
+ <returns>the command type.</returns>
+</member>
+<member name="P:GraphTraceAttribute.ColorName">
+ <summary>Gets the color name.</summary>
+ <returns>the color name.</returns>
+</member>
+<member name="P:GraphTraceAttribute.Format">
+ <summary>Gets the format for displaying values.</summary>
+ <returns>the format for displaying values.</returns>
+</member>
+<member name="T:GraphLabelAttribute">
+ <summary>Specifies a label for display on a history graph.</summary>
+</member>
+<member name="M:GraphLabelAttribute.#ctor(System.String,System.Int32)">
+ <summary>Initializes a new instance of the <see cref="T:GraphLabelAttribute"/> class.</summary>
+ <param name="label">The text of the label.</param>
+ <param name="value">The variable value corresponding to this label's position.</param>
+</member>
+<member name="P:GraphLabelAttribute.Label">
+ <summary>Gets the text of the label.</summary>
+ <returns>the text of the label.</returns>
+</member>
+<member name="P:GraphLabelAttribute.Value">
+ <summary>Gets the variable value corresponding to this label's position.</summary>
+ <returns>the variable value corresponding to this label's position.</returns>
+</member>
+<member name="T:IOAttribute">
+ <summary>Specifies I/O information for a variable.</summary>
+</member>
+<member name="M:IOAttribute.#ctor(IOType,System.Int32,Override,System.String,System.String)">
+ <summary>Initializes a new instance of the <see cref="T:IOAttribute"/> class.</summary>
+ <param name="ioType">The type of the input or output.</param>
+ <param name="channel">The channel number to show - has no additional meaning.</param>
+ <param name="allowOverride">For an output, whether manually overriding the output value is allowed.</param>
+ <param name="icon">An optional icon to show - not currently used.</param>
+ <param name="format">An optional format for displaying the value.</param>
+</member>
+<member name="P:IOAttribute.IOType">
+ <summary>Gets the i/o type.</summary>
+ <returns>the i/o type.</returns>
+</member>
+<member name="P:IOAttribute.Channel">
+ <summary>Gets or sets the channel number.</summary>
+ <returns>the channel number.</returns>
+</member>
+<member name="P:IOAttribute.AllowOverride">
+ <summary>Gets whether manually overriding the output value is allowed.</summary>
+ <returns>true if manually overriding the output value is allowed; otherwise, false.</returns>
+</member>
+<member name="P:IOAttribute.Icon">
+ <summary>Gets the icon.</summary>
+ <returns>the icon.</returns>
+</member>
+<member name="P:IOAttribute.Format">
+ <summary>Gets the format for displaying the value.</summary>
+ <returns>the format for displaying the value.</returns>
+</member>
+<member name="T:IOChannelIncrementAttribute">
+ <summary>Specifies by how much the channel number increases for an array of I/O items.</summary>
+</member>
+<member name="M:IOChannelIncrementAttribute.#ctor(System.Int32)">
+ <summary>Initializes a new instance of the <see cref="T:IOChannelIncrementAttribute"/> class.</summary>
+ <param name="increment">The increment in channel number, which defaults to 1 if this <see cref="T:IOChannelIncrementAttribute"/> is not specified.</param>
+</member>
+<member name="P:IOChannelIncrementAttribute.Increment">
+ <summary>Gets the increment.</summary>
+ <returns>the increment.</returns>
+</member>
+<member name="T:ParameterAttribute">
+ <summary>Specifies the valid range of values for a parameter variable.</summary>
+</member>
+<member name="M:ParameterAttribute.#ctor(System.Int32,System.Int32)">
+ <summary>Initializes a new instance of the <see cref="T:ParameterAttribute"/> class.</summary>
+ <param name="minimumValue">The minimum value allowed for this parameter.</param>
+ <param name="maximumValue">The maximum value allowed for this parameter.</param>
+</member>
+<member name="P:ParameterAttribute.MinimumValue">
+ <summary>Gets the minimum value.</summary>
+ <returns>the minimum value.</returns>
+</member>
+<member name="P:ParameterAttribute.MaximumValue">
+ <summary>Gets the maximum value.</summary>
+ <returns>the maximum value.</returns>
+</member>
+<member name="T:ScreenButtonAttribute">
+ <summary>Defines a button for displaying screen information.</summary>
+</member>
+<member name="M:ScreenButtonAttribute.#ctor(System.String,System.Int32,ButtonImage)">
+ <summary>Initializes a new instance of the <see cref="T:ParameterAttribute"/> class.</summary>
+ <param name="text">The text to go on the button.</param>
+ <param name="order">The order of this button - use 1, 2, 3, etc for your buttons.</param>
+ <param name="image">The image to display on the button.</param>
+</member>
+<member name="P:ScreenButtonAttribute.Text">
+ <summary>Gets the button text.</summary>
+ <returns>the button text.</returns>
+</member>
+<member name="P:ScreenButtonAttribute.Order">
+ <summary>Gets the order.</summary>
+ <returns>the order.</returns>
+</member>
+<member name="P:ScreenButtonAttribute.Image">
+ <summary>Gets the button image.</summary>
+ <returns>the button image.</returns>
+</member>
+<member name="T:ACParent">
+ <summary>Provides methods for accessing the environment in which the control code is running.</summary>
+</member>
+<member name="P:ACParent.AckState">
+ <summary>Gets the acknowledgment state.</summary>
+ <returns>the acknowledgment state.</returns>
+</member>
+<member name="P:ACParent.ButtonText">
+ <summary>Gets the text currently showing on the button used for messages.</summary>
+ <returns>the text currently showing on the button used for messages.</returns>
+</member>
+<member name="P:ACParent.Signal">
+ <summary>Gets or sets a message for the operator.</summary>
+ <returns>a message for the operator.</returns>
+ <remarks>Becomes an empty string again when the operator acknowledges the message.</remarks>
+</member>
+<member name="P:ACParent.UnacknowledgedAlarms">
+ <summary>Gets a list of unacknowledged alarms, separated by commas.</summary>
+ <returns>a list of unacknowledged alarms, separated by commas.</returns>
+</member>
+<member name="M:ACParent.PressButtons(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>Simulates pressing the Run, Pause, Stop, Yes and No buttons.</summary>
+ <remarks>Only when the values go from false to true are they acted on.</remarks>
+</member>
+<member name="P:ACParent.IsProgramRunning">
+ <summary>Gets whether a job is running right now. You can also get this by checking the <see cref="T:Running"/> property.</summary>
+ <returns>true if a job is running right now; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.IsPaused">
+ <summary>Gets whether a job is running right now, but has been paused. You can also get this by checking the <see cref="T:Running"/> property.</summary>
+ <returns>true if a job is running right now, but has been paused; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.IsSignalUnacknowledged">
+ <summary>Gets whether there is an unacknowledged signal.</summary>
+ <returns>true if there is an unacknowledged signal; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.IsAlarmActive">
+ <summary>Gets whether there is an alarm.</summary>
+ <returns>true if there is an alarm; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.IsAlarmUnacknowledged">
+ <summary>Gets whether there is an unacknowledged alarm.</summary>
+ <returns>true if there is an unacknowledged alarm; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.Message(System.Int32)">
+ <summary>Gets a message.</summary>
+ <param name="messageNumber">The message number, 1 to 99</param>
+ <returns>the message of given number.</returns>
+</member>
+<member name="P:ACParent.Mode">
+ <summary>Gets or sets the running mode.</summary>
+ <returns>the running mode.</returns>
+</member>
+<member name="P:ACParent.ProgramNumber">
+ <summary>Gets the number of the program that the sequencer has reached.</summary>
+ <returns>the number of the program that the sequencer has reached.</returns>
+ <remarks>This will change if the sequencer is paused and the step is being changed.</remarks>
+</member>
+<member name="P:ACParent.ProgramName">
+ <summary>Gets the name of the program that the sequencer has reached.</summary>
+ <returns>the name of the program that the sequencer has reached.</returns>
+ <remarks>This will change if the sequencer is paused and the step is being changed.</remarks>
+</member>
+<member name="P:ACParent.StepNumber">
+ <summary>Gets the number of the step that the sequencer has reached.</summary>
+ <returns>the number of the step that the sequencer has reached.</returns>
+ <remarks>This will change if the sequencer is paused and the step is being changed.</remarks>
+</member>
+<member name="P:ACParent.StepText">
+ <summary>Gets the text of the step that the sequencer has reached.</summary>
+ <returns>the text of the step that the sequencer has reached.</returns>
+ <remarks>This will change if the sequencer is paused and the step is being changed.</remarks>
+</member>
+<member name="P:ACParent.TimeInStep">
+ <summary>Gets the time that the sequencer has spent in the current step versus how long it is supposed to spend there in total.</summary>
+ <returns>the time that the sequencer has spent in the current step versus how long it is supposed to spend there in total.</returns>
+ <remarks>For example, "10 / 15" means 10 minutes out of an expected total of 15 minutes.</remarks>
+</member>
+<member name="P:ACParent.CurrentStep">
+ <summary>Gets the current step number, relative to all steps in all programs.</summary>
+ <returns>the current step number, relative to all steps in all programs.</returns>
+</member>
+<member name="P:ACParent.ChangingStep">
+ <summary>Gets the current changing step number, relative to all steps in all programs.</summary>
+ <returns>the current changing step number, relative to all steps in all programs.</returns>
+</member>
+<member name="P:ACParent.Job">
+ <summary>Gets the name of the job being run.</summary>
+ <returns>the name of the job being run.</returns>
+</member>
+<member name="P:ACParent.PrefixedSteps">
+ <summary>Gets information for all steps, prefixed by extra information.</summary>
+ <returns>information for all steps, prefixed by extra information.</returns>
+</member>
+<member name="P:ACParent.Messages">
+ <summary>Gets information for all messages.</summary>
+ <returns>information for all messages.</returns>
+</member>
+<member name="P:ACParent.Programs">
+ <summary>Gets information for all programs.</summary>
+ <returns>information for all programs.</returns>
+</member>
+<member name="P:ACParent.TimeInSteps">
+ <summary>Gets information for all messages.</summary>
+ <returns>information for all messages.</returns>
+</member>
+<member name="P:ACParent.ElapsedTime">
+ <summary>Gets the time elapsed since the job started.</summary>
+ <returns>the time elapsed since the job started.</returns>
+</member>
+<member name="P:ACParent.ElapsedTimeExpected">
+ <summary>Gets the time that should have elapsed since the job started.</summary>
+ <returns>the time that should have elapsed since the job started.</returns>
+</member>
+<member name="P:ACParent.RemainingTime">
+ <summary>Gets the time remaining until the job ends.</summary>
+ <returns>the time remaining until the job ends.</returns>
+</member>
+<member name="P:ACParent.ProgramNumbers">
+ <summary>Gets the numbers of all programs that were specified when the current job was started.</summary>
+ <returns>the numbers of all programs that were specified when the current job was started.</returns>
+</member>
+<member name="P:ACParent.ActiveAlarms">
+ <summary>Gets the names of all active alarms, separated by commas.</summary>
+ <returns>the names of all active alarms, separated by commas.</returns>
+</member>
+<member name="P:ACParent.IsSleeping">
+ <summary>Gets whether the system is sleeping.</summary>
+ <returns>true if the system is sleeping; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.ControlSystemName">
+ <summary>Gets the name of our own control system.</summary>
+ <returns>the name of our own control system.</returns>
+</member>
+<member name="P:ACParent.ControlSystemNumber">
+ <summary>Gets the number of our own control system, relative to others, starting from 1.</summary>
+ <returns>the number of our own control system, relative to others, starting from 1.</returns>
+</member>
+<member name="P:ACParent.ControlSystem(System.Int32)">
+ <summary>Gets the 'ControlCode' instance of another control system.</summary>
+ <param name="index">The index of the control system, starting from 1.</param>
+ <returns>the 'ControlCode' instance of another control system.</returns>
+</member>
+<member name="P:ACParent.ControlSystemCount">
+ <summary>Gets the total number of control systems.</summary>
+ <returns>the total number of control systems.</returns>
+</member>
+<member name="P:ACParent.CouplingMaster">
+ <summary>Gets the 'ControlCode' instance of the control system that is the master of coupling.</summary>
+ <returns>the 'ControlCode' instance of the control system that is the master of coupling.</returns>
+ <remarks>Returns null if our control system is not coupled.  Also returns null if our control system is coupled, and we are ourself the master.</remarks>
+</member>
+<member name="P:ACParent.Coupled">
+ <summary>Gets whether we are running in coupled mode.</summary>
+ <returns>true if running in coupled mode; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.CouplingCombination">
+ <summary>Gets the coupling combination number, starting from 1, or 0 if not coupled.</summary>
+ <returns>the coupling combination number, starting from 1, or 0 if not coupled.</returns>
+</member>
+<member name="P:ACParent.CouplingReady">
+ <summary>Sets whether the current coupled function is ready.</summary>
+</member>
+<member name="P:ACParent.CouplingAllReady">
+ <summary>Gets whether the current coupled function is ready for all coupled control systems.</summary>
+ <returns>true if the current coupled function is ready for all coupled control systems; otherwise, false.</returns>
+</member>
+<member name="P:ACParent.CouplingSafe">
+ <summary>Sets whether the current coupled function is safe.</summary>
+</member>
+<member name="P:ACParent.CouplingAllSafe">
+ <summary>Gets whether the current coupled function is safe for all coupled control systems.</summary>
+ <returns>true if the current coupled function is safe for all coupled control systems; otherwise, false.</returns>
+</member>
+<member name="M:ACParent.AddButton(System.Object,ButtonPosition,System.Windows.Forms.Control)">
+ <summary>Adds a button to one of the main toolbars.</summary>
+ <param name="button">The button to add, a <see cref="T:System.Windows.Forms.ToolStripItem"/>, usually a <see cref="T:System.Windows.Forms.ToolStripButton"/>.</param>
+ <param name="position">The toolbar on which to add the button.</param>
+ <param name="view">The <see cref="T:System.Windows.Forms.Control"/> to show when the button is pressed.</param>
+</member>
+<member name="M:ACParent.AddStandardButton(StandardButton,ButtonPosition,System.String,System.Int32)">
+ <summary>Adds a standard button (like Variables) to one of the main toolbars.</summary>
+ <param name="button">The button to add.</param>
+ <param name="position">The toolbar on which to add the button.</param>
+ <param name="text">Optionally, the text to show on the button, if standard text is not wanted.</param>
+ <param name="options">Further options for the standard button.</param>
+ <remarks>If used with <paramref name="button"/>=<see cref="F:StandardButton.Program"/>, then the following <paramref name="options"/> can be used for the program window:  Pause=1, Run=2, ChangeStep=4,Stop=8, YesOrNo=16, Halt=32.</remarks>
+</member>
+<member name="M:ACParent.PressButton(ButtonPosition,System.Int32)">
+ <summary>Presses a button on one of the main toolbars.</summary>
+ <param name="position">The toolbar.</param>
+ <param name="index">The zero-based index of the button on the toolbar.</param>
+</member>
+<member name="M:ACParent.SetButtonVisible(ButtonPosition,System.Int32,System.Boolean)">
+ <summary>Makes a button on one of the main toolbars visible or not visible.</summary>
+ <param name="position">The toolbar.</param>
+ <param name="index">The zero-based index of the burron on the toolbar.</param>
+ <param name="visible">Whether the button is visible.</param>
+</member>
+<member name="M:ACParent.SetExpertButtonVisible(System.Boolean)">
+ <summary>Makes the expert button visible or not visible.</summary>
+ <param name="visible">Whether the expert button is visible.</param>
+</member>
+<member name="M:ACParent.SetStatusView(System.Windows.Forms.Control)">
+ <summary>Set a non-standard status view to show at the top of each standard window.</summary>
+ <param name="value">The control to use as a status view.</param>
+ <remarks>Only works if there is a single control system.</remarks>
+</member>
+<member name="M:ACParent.DbGetDataTable(System.String)">
+ <summary>Executes an SQL statement against the control system database and returns data in a <see cref="T:System.Data.DataTable"/>.</summary>
+ <param name="sql">The SQL text.</param>
+ <returns>the data.</returns>
+</member>
+<member name="M:ACParent.DbExecute(System.String,System.Object[])">
+ <summary>Executes an SQL statement against the control system database.</summary>
+ <param name="sql">The SQL text.</param>
+ <param name="parameterNamesAndValues">Optional parameter names and values for the SQL statement.</param>
+ <returns>the number of rows affected.</returns>
+</member>
+<member name="M:ACParent.DbSqlString(System.Object)">
+ <summary>Makes a <see cref="T:System.String"/> suitable for use in an SQL statement from the given value.</summary>
+ <param name="value">The value to convert to a <see cref="T:System.String"/>.</param>
+ <returns>a <see cref="T:System.String"/> suitable for use in an SQL statement.</returns>
+</member>
+<member name="M:ACParent.DbUpdateSchema(System.String)">
+ <summary>Updates the schema of the control system database with the given SQL schema text.</summary>
+ <param name="sql">The SQL schema text.</param>
+</member>
+<member name="M:ACParent.StartJob(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Collections.Generic.IEnumerable{System.String})">
+ <summary>Starts a job running.</summary>
+ <param name="job">The job.</param>
+ <param name="programNumbers">The program numbers.</param>
+ <param name="substituteSteps">The steps to substitute.</param>
+</member>
+<member name="M:ACParent.StartJob(System.String,System.String[])">
+ <summary>Starts a job running.</summary>
+ <param name="job">The job.</param>
+ <param name="steps">The steps to run.</param>
+</member>
+<member name="M:ACParent.StopJob">
+ <summary>Stops a job.</summary>
+</member>
+<member name="M:ACParent.NonStandardDb">
+ <summary>Call this to prevent standard database schema activities from happening.</summary>
+</member>
+<member name="M:ACParent.CreateView(System.String)">
+ <summary>Creates a standard view.</summary>
+ <param name="typeName">One of "History", "Variables", "IO" or "Parameters"</param>
+ <returns>the created view.</returns>
+</member>
+<member name="M:ACParent.CreateHistory(System.Byte[])">
+ <summary>Creates a history from serialized data.</summary>
+ <param name="bytes">The bytes from which to create the history</param>
+ <returns>an instance of the History object.</returns>
+</member>
+<member name="M:ACParent.CreateControlCodeProxy(System.Object)">
+ <summary>Creates a proxy to a object of type 'ControlCode' found at the given data source.</summary>
+ <param name="dataSource">The data source.</param>
+ <returns>the proxy object.</returns>
+</member>
+<member name="M:ACParent.CreateProxy(System.Type,System.Object)">
+ <summary>Creates a proxy to a object of given type found at the given data source.</summary>
+ <param name="classToProxy">The type to proxy.</param>
+ <param name="dataSource">The data source.</param>
+ <returns>the proxy object.</returns>
+</member>
+<member name="P:ACParent.History">
+ <summary>Gets the live history.</summary>
+ <returns>the live history.</returns>
+</member>
+<member name="M:ACParent.CreateRemoteValues(System.String,System.Int32,System.String[])">
+ <summary>Creates an instance of <see cref="T:RemoteValues"/> that can read and write the variables in a control system.</summary>
+ <param name="connect">The connect path to the control system.</param>
+ <param name="autoRefreshInterval">How often to read the property values, measured in ms.</param>
+ <param name="properties">The names of properties to automatically read from the control system.</param>
+ <returns>an instance of <see cref="T:RemoteValues"/>.</returns>
+</member>
+<member name="M:ACParent.LogEvent(LogEventType,System.Object,System.String)">
+ <summary>Logs an event to the control system log file.</summary>
+ <param name="eventType">The type of the event.</param>
+ <param name="id">The id of the event, usually an <see cref="T:System.Enum"/> value.</param>
+ <param name="message">The message.</param>
+</member>
+<member name="M:ACParent.LogException(System.Exception)">
+ <summary>Logs an exception to the control system log file.</summary>
+ <param name="ex">The exception.</param>
+</member>
+<member name="P:ACParent.Setting(System.String)">
+ <summary>Gets the value of a setting from the control system setup file.</summary>
+ <param name="name">The name of the setting.</param>
+ <returns>the value of the setting, or an empty string if the <paramref name="name"/> is not found.</returns>
+</member>
+<member name="M:ACParent.SetIOChannel(System.String,System.Int32)">
+ <summary>Sets the channel number of an IO variable to a different value.  Use 0 to hide the variable.</summary>
+ <param name="name">The name of the IO variable.</param>
+ <param name="channel">The new channel number, or 0 to hide the variable.</param>
+</member>
+<member name="P:ACParent.CultureName">
+ <summary>Gets the name of the culture (language) for which the control system is displaying text.</summary>
+ <returns>the name of the culture (language) for which the control system is displaying text.</returns>
+</member>
+<member name="P:ACParent.DongleBytes">
+ <summary>Gets the data found in the attached dongle, if any.</summary>
+ <returns>the data found in the attached dongle, or null if no dongle is in use.</returns>
+</member>
+<member name="M:RemoteValues.SetValues(System.Object[])">
+ <summary>Sets values for properties of given names.</summary>
+ <example>
+ <code>SetValues("Var1", 46, "Var2", "Abc")</code>
+ </example>
+ <param name="namesAndValues">Pairs of names and values, separated by commas.</param>
+ <remarks>Performed asynchronously, so it is not possible to tell whether the method succeeded.</remarks>
+</member>
+<member name="P:RemoteValues.Value(System.Int32)">
+ <summary>Gets the latest values of a property.</summary>
+ <param name="index">The zero-based index of the property, based on the order the properties were named in the call to <see cref="M:ACParent.CreateRemoteValues(System.String,System.Int32,System.String[])"></see>.</param>
+ <returns>the latest values of a property.</returns>
+</member>
+<member name="P:RemoteValues.LastOK">
+ <summary>Gets whether the last refresh of the values went ok.</summary>
+ <returns>true if the last refresh of the values went ok; otherwise, false.</returns>
+ <remarks>As long as the values have been refreshed successfully at least once, then it is ok to call <see cref="P:RemoteValues.Value(System.Int32)">.</see></remarks>
+</member>
+<member name="T:InactiveTimeout">
+ <summary>A class that raises an event if there has not been mouse or keyboard activity for this application for a while.</summary>
+</member>
+<member name="M:Support.ReScale(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>Returns a rescaled value.</summary>
+ <param name="value"></param>
+ <param name="inMin"></param>
+ <param name="inMax"></param>
+ <param name="outMin"></param>
+ <param name="outMax"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Support.MinMax(System.Int32,System.Int32,System.Int32)">
+ <summary>Returns the given value constrained to lie beneath the min and the max.</summary>
+ <param name="value">The value to check.</param>
+ <param name="min">The least value that can be returned.</param>
+ <param name="max">The greatest value that can be returned.</param>
+</member>
+</members>
+</doc>
